@@ -1,9 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
 import React, { Component } from 'react';
 import {
   AppRegistry,
@@ -12,15 +6,25 @@ import {
   View
 } from 'react-native';
 
-import HomeView from './frontend/homeView';
+class HomeView extends Component {
+  constructor() {
+    super();
 
-export default class journeysEnd extends Component {
+  }
+
   render() {
+
     return (
-      <HomeView />
-    );
+
+      <View style={styles.container}>
+        <Text style={styles.welcome}>
+          HomeView
+        </Text>
+      </View>
+    )
   }
 }
+
 
 const styles = StyleSheet.create({
   container: {
@@ -41,4 +45,4 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('journeysEnd', () => journeysEnd);
+module.exports = HomeView;
