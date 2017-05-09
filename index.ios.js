@@ -13,11 +13,12 @@ import {
 } from 'react-native';
 
 import HomeView from './frontend/homeView';
+import MapView from './frontend/mapView';
 
 export default class journeysEnd extends Component {
   render() {
     return (
-      <HomeView />
+      <MapView />
     );
   }
 }
